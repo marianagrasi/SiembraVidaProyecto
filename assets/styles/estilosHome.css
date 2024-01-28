@@ -84,3 +84,9 @@ li{
 		margin: 15px;
 	}
 }
+footer{
+    text-align: center;
+	background-color: #E5DFD3;
+	color: #485000;
+    font-size: 18px;
+}
