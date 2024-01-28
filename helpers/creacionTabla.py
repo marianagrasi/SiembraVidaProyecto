@@ -36,3 +36,6 @@ def crearTabla(dataFrame,nombreTabla):
     # Escribir la tabla y generarla en el proyecto
     with open(rutaArchivo,"w",encoding='utf-8') as archivo:
         archivo.write(f"{encabezadoHTML}\n{archivoHTML}\n</body>\n</html>")
+
+    
+   
