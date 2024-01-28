@@ -23,3 +23,17 @@ def analizarSiembraBasica():
     #print(tabla.tail()) # imprime los ultimos 5 registros
 
     #print(tabla.describe()) # Informacion basica descriptiva de todos los datos
+
+    #Arboles sembrados en Medellin con(arboles sembrados) mayores a 200
+    filtroArbol=tabla.query("(Ciudad=='Medellín') and (Arboles > 200)")
+    crearTabla(filtroArbol,'filtroarbol')
+    
+    #Santa fe de Antioquia veredas paso real y Tonusco Arriba
+    filtroVereda=tabla.query("(Ciudad=='Santa Fe de Antioquia') and(Vereda=='Paso Real')and (Vereda=='Tonusco Arriba')")
+    crearTabla(filtroVereda,'filtrovereda')
+
+    #Siembra en el Bagre mayores a 60 arboles
+    #filtroBagre=tabla.query("(Ciudad=='Bagre') and (Arboles >60)")
+    #crearTabla(filtroBagre,'filtrobagre')
+
+    #Santa Rosa de osos las 
