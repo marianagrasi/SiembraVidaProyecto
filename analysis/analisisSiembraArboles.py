@@ -29,12 +29,23 @@ def analizarSiembraBasica():
     crearTabla(filtroArbol,'filtroarbol')
     
     #Santa fe de Antioquia veredas paso real y Tonusco Arriba
-    filtroVereda=tabla.query("(Ciudad=='Santa Fe de Antioquia') and(Vereda=='Paso Real')and (Vereda=='Tonusco Arriba')")
+    filtroVereda=tabla.query("(Ciudad=='Santa Fe de Antioquia') and(Vereda=='Paso Real') or (Ciudad=='Santa Fe de Antioquia') and (Vereda=='Tonusco Arriba')")
     crearTabla(filtroVereda,'filtrovereda')
 
     #Siembra en el Bagre mayores a 60 arboles
-    #filtroBagre=tabla.query("(Ciudad=='Bagre') and (Arboles >60)")
-    #crearTabla(filtroBagre,'filtrobagre')
+    filtroBagre=tabla.query("(Ciudad=='El Bagre') and (Arboles >60)")
+    crearTabla(filtroBagre,'filtrobagre')
 
-    #Santa Rosa de osos las 
-    ##3#
+    #Santa rosa de osos vereda las cruces y mina vieja
+    filtroSantaRosa=tabla.query("(Ciudad=='Santa Rosa de Osos') and (Vereda=='Mina Vieja') or(Ciudad=='Santa Rosa de Osos') and (Vereda=='Las Cruces')")
+    crearTabla(filtroSantaRosa,'filtrosantarosa')
+
+    #Filtrat todo lo de Yondó
+    filtroYondo=tabla.query("(Ciudad=='Yondó')")
+    crearTabla(filtroYondo,'filtroYondo')
+
+
+
+
+
+
