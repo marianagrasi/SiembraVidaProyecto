@@ -43,6 +43,12 @@ def analizarSiembraBasica():
     #Filtrat todo lo de Yondó
     filtroYondo=tabla.query("(Ciudad=='Yondó')")
     crearTabla(filtroYondo,'filtroYondo')
+    
+
+
+
+
+
 
 
 
