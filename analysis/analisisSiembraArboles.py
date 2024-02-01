@@ -3,6 +3,9 @@
 
 import pandas as pd
 from helpers.creacionTabla import crearTabla
+from helpers.creacionGrafica import generarGrafica
+from helpers.creacionGraficaDos import generarGraficaSum
+from helpers.creacionGraficaTres import generarGraficaSuma
 
 def analizarSiembraBasica():
     # 2. Sin importar la fuente (sql, xls, JSON, csv...)
@@ -44,7 +47,14 @@ def analizarSiembraBasica():
     filtroYondo=tabla.query("(Ciudad=='Yondó')")
     crearTabla(filtroYondo,'filtroYondo')
 
+    filtroArboles=tabla.query("(Ciudad=='Medellín') and (Arboles>0) or (Ciudad=='Santa Fe de Antioquia') and (Arboles>0) or (Ciudad=='El Bagre') and (Arboles>0) or (Ciudad=='Santa Rosa de Osos') and (Arboles>0) or (Ciudad=='Yondó') and (Arboles>0) ")
+    generarGrafica(filtroArboles)
 
+    filtroCantidadArboles=tabla.query("(Ciudad=='Andes') and (Arboles>0) or (Ciudad=='Medellín') and (Arboles>0)")
+    generarGraficaSum(filtroCantidadArboles)
+
+    filtroEspecieArboles=tabla.query("(Ciudad=='Barbosa') and (Hectareas > 0) or (Ciudad=='Medellín') and (Hectareas > 0) or (Ciudad=='Bello') and (Hectareas > 0)  ")
+    generarGraficaSuma(filtroEspecieArboles)
 
 
 
