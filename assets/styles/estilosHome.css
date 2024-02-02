@@ -86,9 +86,58 @@ li{
 		margin: 15px;
 	}
 }
-footer{
+   /* Clase para el contenedor del pie de página */
+   .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #E5DFD3; /* Color de fondo */
+    color: #485000; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
     text-align: center;
-	background-color: #E5DFD3;
-	color: #485000;
-    font-size: 18px;
-}
+  }
+
+  /* Clase para el logo */
+  .footer-logo {
+    position: relative;
+    width: 30vh;
+    right: 22%;
+  }
+
+/* Clase para el texto alado del logo*/
+  .footer-text {
+	position: relative;
+    right: 10%;
+    padding-top: 1.5rem;
+  }
+
+ /*Clase para los githubs*/
+  .footer-github {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+
+  .github-list {
+    list-style: none;
+  }
+/*clase para la separacion y moviento de los githubs*/
+  .github-item {
+	position: relative;
+    right: 4%;
+    top: 30%;
+    padding: 2rem;
+  }
+/*Clase para las imagenes del github*/
+  .github-img {
+	width: 12vh;
+    height: 11vh;
+    position: relative;
+    padding: 1rem;
+  }
+
+  .github-link {
+    text-decoration: none;
+    color: #485000;
+  }
