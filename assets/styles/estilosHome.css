@@ -106,8 +106,8 @@ li{
 
 /* Clase para el texto alado del logo*/
   .footer-text {
-	position: relative;
-    right: 10%;
+    position: relative;
+    right: 8%;
     padding-top: 1.5rem;
   }
 
