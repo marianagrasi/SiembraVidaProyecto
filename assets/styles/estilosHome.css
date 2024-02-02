@@ -130,3 +130,36 @@ footer .card{
   	object-position: center;
 }
 
+
+#acerca-de {
+	background-color: #E5DFD3;
+	padding: 100px 0;
+  }
+  
+  #acerca-de h2 {
+	letter-spacing: 0.3em;
+	text-shadow: 2px 2px 4px #485000;
+	color: #485000;
+  }
+  
+  #acerca-de p {
+	color: #6a6a6a;
+	font-size: 16px;
+	line-height: 1.8;
+	margin-bottom: 15px;
+  }
+  
+  #acerca-de img {
+	width: 100%;
+	height: auto;
+	border-radius: 6px;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+	transition: all 400ms ease-out;
+  }
+  
+  #acerca-de img:hover {
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+	transform: translateY(-3%);
+  }
+  
+
