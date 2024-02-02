@@ -33,23 +33,23 @@
           </a>
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
+              <a class="nav-link" href="#nosotros">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Servicios</a>
+              <a class="nav-link" href="#servicios">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Análisis de Datos</a>
+              <a class="nav-link" href="#analisis">Análisis de Datos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Redes Sociales</a>
+              <a class="nav-link" href="#equipo">Equipo</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <section>
+      <section id="nosotros">
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
             <button
@@ -117,7 +117,7 @@
           </button>
         </div>
       </section>
-      <section class="servicios">
+      <section class="servicios" id="servicios">
           <div class="title-cards">
             <h2 class="fw-bold mb-5">SERVICIOS QUE OFRECEMOS</h2>
           </div>
@@ -160,7 +160,7 @@
             </div>
           </div>
       </section>
-      <section class="datos">
+      <section class="datos" id="analisis">
         <div class="title-cards"><h2 class="fw-bold mb-5">ANÁLISIS DE DATOS</h2></div>
             <div class="container">
                 <div class="row my-5 text-center">
@@ -179,19 +179,19 @@
                                 <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">El Bagre</button>
                               </li>
                               <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Santa Rosa</button>
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contacto-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Santa Rosa</button>
                               </li>
                               <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Yondó</button>
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contacti-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Yondó</button>
                               </li>
                         
                           </ul>
                             <div class="tab-content" id="myTabContent">
-                              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"><iframe src="./tables/filtroarbol.html" frameborder="0" class="w-100" height="300"></iframe></div>
-                              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><iframe src="./tables/filtrovereda.html" frameborder="0" class="w-100" height="300"></iframe></div>    
-                              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><iframe src="./tables/filtrobagre.html" frameborder="0" class="w-100" height="300"></iframe></div>
-                              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><iframe src="./tables/filtrosantarosa.html" frameborder="0" class="w-100" height="300"></iframe></div>
-                              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><iframe src="./tables/filtroYondo.html" frameborder="0" class="w-100" height="300"></iframe></div>
+                              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"><iframe src="./tables/filtroarbol.html" frameborder="0" class="w-100" height="900"></iframe></div>
+                              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><iframe src="./tables/filtrovereda.html" frameborder="0" class="w-100" height="900"></iframe></div>    
+                              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><iframe src="./tables/filtrobagre.html" frameborder="0" class="w-100" height="900"></iframe></div>
+                              <div class="tab-pane fade" id="contacto-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><iframe src="./tables/filtrosantarosa.html" frameborder="0" class="w-100" height="900"></iframe></div>
+                              <div class="tab-pane fade" id="contacti-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><iframe src="./tables/filtroYondo.html" frameborder="0" class="w-100" height="900"></iframe></div>
                               <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
                             </div>
                       </section>
@@ -199,14 +199,34 @@
                     <div class="col-6 border border-end shadow p-3 rounded-3 bg-white">
                         <h4 class="p-2 fw-bold">Gráficas</h4>
                         <img src="./assets/img/grafica.jpg" alt="tablas" class="mx-auto d-block w-25 m-5">
-                        <img src="./graphs/promediosiembraarboles.png" class="img-fluid w-100">
+                        <section>
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="hom-tab" data-bs-toggle="tab" data-bs-target="#hom-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Cantidad</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="profil-tab" data-bs-toggle="tab" data-bs-target="#profil-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Héctareas</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="contac-tab" data-bs-toggle="tab" data-bs-target="#contac-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Siembra</button>
+                            </li>
+                      
+                      
+                        </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="hom-tab-pane" role="tabpanel" aria-labelledby="hom-tab" tabindex="0"><img src="./graphs/cantidadarboles.png" class="img-fluid w-100"></div>
+                            <div class="tab-pane fade" id="profil-tab-pane" role="tabpanel" aria-labelledby="profil-tab" tabindex="0"><img src="./graphs/cantidadhectareasarboles.png" class="img-fluid w-100"></div>    
+                            <div class="tab-pane fade" id="contac-tab-pane" role="tabpanel" aria-labelledby="contac-tab" tabindex="0"><img src="./graphs/promediosiembraarboles.png" class="img-fluid w-100"></div>
+                          </div>
+
+                        </section>
                     </div>
                 </div>
             </div>
       </section>
 </main>
 
-<footer>
+<footer id="equipo">
   <img src="./assets/img/SimbraVidaLogo.png" alt="Logo"width="300">
   <p> Elaborado por: Equipo SiembraVida - 2024</p>
   <ul>

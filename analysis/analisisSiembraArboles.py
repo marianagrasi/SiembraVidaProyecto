@@ -46,6 +46,12 @@ def analizarSiembraBasica():
     #Filtrat todo lo de Yondó
     filtroYondo=tabla.query("(Ciudad=='Yondó')")
     crearTabla(filtroYondo,'filtroYondo')
+    
+
+
+
+
+
 
     filtroArboles=tabla.query("(Ciudad=='Medellín') and (Arboles>0) or (Ciudad=='Santa Fe de Antioquia') and (Arboles>0) or (Ciudad=='El Bagre') and (Arboles>0) or (Ciudad=='Santa Rosa de Osos') and (Arboles>0) or (Ciudad=='Yondó') and (Arboles>0) ")
     generarGrafica(filtroArboles)
