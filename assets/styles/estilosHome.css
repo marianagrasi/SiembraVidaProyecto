@@ -14,9 +14,9 @@ body{
 }
 
 .logo{
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 20%;
+    position: relative;
+    left: 12%;
+    width: 27vh;
 }
 
 li{
@@ -25,7 +25,9 @@ li{
 
 .nav-link{
     color: #485000;
-    font-size: 18px;
+    position: relative;
+    font-size: 16px;
+    left: 38%
 }
 
 .container-card{
@@ -83,4 +85,34 @@ li{
 	.card{
 		margin: 15px;
 	}
+}
+footer{
+    text-align: center;
+	background-color: #E5DFD3;
+	color: #485000;
+    font-size: 18px;
+}
+
+.servicios{
+    margin: 0;
+    padding: 100px;
+    background-image: url(/assets/img/FondoOliva.jpg);
+	background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.datos{
+	background-color: #E5DFD3;
+	margin: 0;
+	padding: 100px;
+}
+
+h2{
+	letter-spacing: 0.3em;
+	text-shadow: 2px 2px 4px #485000;
+}
+
+h4{
+	color: #485000;
+	border-bottom: 2px solid #FE982A;
 }
