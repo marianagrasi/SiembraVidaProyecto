@@ -115,3 +115,18 @@ h4{
 	color: #485000;
 	border-bottom: 2px solid #FE982A;
 }
+
+footer .card{
+	overflow: hidden;
+	width: 200px;
+	height: 150px;
+	margin: 0.5rem;
+}
+
+.imggit{
+	width: 50%;
+  	height: 50%;
+  	object-fit: cover;
+  	object-position: center;
+}
+
