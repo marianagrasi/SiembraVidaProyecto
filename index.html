@@ -27,19 +27,22 @@
             <img
               src="./assets/img/SimbraVidaLogo.png"
               alt="Logo"
-              width="500"
+              width="350"
               class="logo"
             />
           </a>
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Nosotros</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Redes</a>
+              <a class="nav-link" href="#">Análisis de Datos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Redes Sociales</a>
             </li>
           </ul>
         </div>
@@ -73,7 +76,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="./assets/img/arboles.jpg"
+                src="./assets/img/banner1.jpg"
                 class="d-block w-100"
                 alt="..."
               />
@@ -81,30 +84,17 @@
             </div>
             <div class="carousel-item">
               <img
-                src="./assets/img/imagen1.jpeg"
+                src="./assets/img/banner2.jpg"
                 class="d-block w-100"
                 alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
-                <p>Se debe quitar ESTOOOOOOOO</p>
-              </div>
+              />              
             </div>
             <div class="carousel-item">
               <img
-                src="./assets/img/imagen3.jpg"
+                src="./assets/img/banner3.jpg"
                 class="d-block w-100"
                 alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
+              />              
             </div>
           </div>
           <button
@@ -213,6 +203,93 @@
           </div>
       </div>
   </section>
+      <section class="servicios">
+          <div class="title-cards">
+            <h2 class="fw-bold mb-5">SERVICIOS QUE OFRECEMOS</h2>
+          </div>
+          <div class="container-card">
+            <div class="card">
+              <figure>
+                <img src="./assets/img/analisis.jpg" />
+              </figure>
+              <div class="contenido-card">
+                <h3>Análisis de datos forestales</h3>
+                <p>
+                  Ofrecer servicios de recopilación, procesamiento y análisis de datos
+                  relacionados con la siembra y crecimiento de árboles.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <figure>
+                <img src="./assets/img/siembra.jpg" />
+              </figure>
+              <div class="contenido-card">
+                <h3>Consultoría en siembra sostenible</h3>
+                <p>
+                  Brindar asesoramiento sobre prácticas sostenibles de siembra y
+                  gestión forestal.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <figure>
+                <img src="./assets/img/reforestacion.jpg" />
+              </figure>
+              <div class="contenido-card">
+                <h3>Diseño de estrategias de reforestación</h3>
+                <p>
+                  Colaborar en la planificación y diseño de estrategias efectivas de
+                  reforestación utilizando datos y análisis.
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="datos">
+        <div class="title-cards"><h2 class="fw-bold mb-5">ANÁLISIS DE DATOS</h2></div>
+            <div class="container">
+                <div class="row my-5 text-center">
+                    <div class="col-6 border border-end shadow p-3 rounded-3 bg-white">
+                        <h4 class="p-2 fw-bold">Resultados</h4>
+                        <img src="./assets/img/tablas.jpg" alt="tablas" class="mx-auto d-block w-25 m-5">
+                        <section class="my-4" style="height: 100%;">
+                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Medellín</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Santa Fé</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">El Bagre</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Santa Rosa</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Yondó</button>
+                              </li>
+                        
+                          </ul>
+                            <div class="tab-content" id="myTabContent">
+                              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"><iframe src="./tables/filtroarbol.html" frameborder="0" class="w-100" height="300"></iframe></div>
+                              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"><iframe src="./tables/filtrovereda.html" frameborder="0" class="w-100" height="300"></iframe></div>    
+                              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><iframe src="./tables/filtrobagre.html" frameborder="0" class="w-100" height="300"></iframe></div>
+                              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><iframe src="./tables/filtrosantarosa.html" frameborder="0" class="w-100" height="300"></iframe></div>
+                              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><iframe src="./tables/filtroYondo.html" frameborder="0" class="w-100" height="300"></iframe></div>
+                              <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+                            </div>
+                      </section>
+                    </div>
+                    <div class="col-6 border border-end shadow p-3 rounded-3 bg-white">
+                        <h4 class="p-2 fw-bold">Gráficas</h4>
+                        <img src="./assets/img/grafica.jpg" alt="tablas" class="mx-auto d-block w-25 m-5">
+                        <img src="./graphs/promediosiembraarboles.png" class="img-fluid w-100">
+                    </div>
+                </div>
+            </div>
+      </section>
 </main>
 
 <footer>
@@ -244,6 +321,7 @@
       <a href="https://github.com/yisus0122" target="_blank">Jesús</a>
     </li>
   </ul>
+  <img src="./assets/img/footer2.png" alt="" class="w-100">
 </footer>
 
     <script
